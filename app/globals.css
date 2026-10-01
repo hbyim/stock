@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #070b12;
+  --foreground: #e8eef8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-noto-sans-kr);
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  min-height: 100%;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(34, 211, 238, 0.16), transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, rgba(59, 130, 246, 0.12), transparent 45%),
+    var(--background);
+  color: var(--foreground);
+}
+
+input[type="range"] {
+  height: 6px;
+}
